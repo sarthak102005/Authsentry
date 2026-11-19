@@ -1,0 +1,10 @@
+Nov 19 18:00:01 lab-server sshd[1001]: Failed password for invalid user admin from 203.0.113.10 port 50101 ssh2
+Nov 19 18:01:12 lab-server sshd[1002]: Failed password for invalid user admin from 203.0.113.10 port 50102 ssh2
+Nov 19 18:02:09 lab-server sshd[1003]: Failed password for root from 203.0.113.10 port 50103 ssh2
+Nov 19 18:03:43 lab-server sshd[1004]: Failed password for invalid user test from 203.0.113.10 port 50104 ssh2
+Nov 19 18:04:18 lab-server sshd[1005]: Failed password for root from 203.0.113.10 port 50105 ssh2
+Nov 19 18:05:27 lab-server sshd[1006]: Failed password for deploy from 203.0.113.10 port 50106 ssh2
+Nov 19 18:06:04 lab-server sshd[1007]: Accepted publickey for deploy from 203.0.113.10 port 50200 ssh2
+Nov 19 18:07:56 lab-server sshd[1008]: Failed password for invalid user guest from 192.0.2.44 port 50300 ssh2
+Nov 19 18:30:10 lab-server sshd[1009]: Failed password for invalid user guest from 192.0.2.44 port 50301 ssh2
+Nov 19 18:31:15 lab-server sshd[1010]: Accepted publickey for analyst from 198.51.100.25 port 50201 ssh2

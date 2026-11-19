@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.authsentry_report.json
+*.tmp
+authsentry_report.json
+authsentry_alerts.csv
+authsentry_ip_summary.csv
+reports/
+.coverage
+.pytest_cache/

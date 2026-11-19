@@ -1,0 +1,80 @@
+{
+  "tool": "AuthSentry",
+  "report_generated_at": "2026-11-19T14:18:13",
+  "detection_config": {
+    "failed_attempt_threshold": 5,
+    "window_minutes": 10,
+    "success_correlation_minutes": 30
+  },
+  "summary": {
+    "parsed_authentication_events": 10,
+    "failed_events": 8,
+    "accepted_events": 2,
+    "unique_source_ips": 3,
+    "skipped_lines": 0,
+    "alerts_generated": 1
+  },
+  "source_ip_activity": [
+    {
+      "source_ip": "203.0.113.10",
+      "total_events": 7,
+      "failed_attempts": 6,
+      "successful_logins": 1,
+      "unique_usernames": [
+        "admin",
+        "deploy",
+        "root",
+        "test"
+      ],
+      "first_seen": "2026-11-19 18:00:01",
+      "last_seen": "2026-11-19 18:06:04",
+      "alert_triggered": true
+    },
+    {
+      "source_ip": "192.0.2.44",
+      "total_events": 2,
+      "failed_attempts": 2,
+      "successful_logins": 0,
+      "unique_usernames": [
+        "guest"
+      ],
+      "first_seen": "2026-11-19 18:07:56",
+      "last_seen": "2026-11-19 18:30:10",
+      "alert_triggered": false
+    },
+    {
+      "source_ip": "198.51.100.25",
+      "total_events": 1,
+      "failed_attempts": 0,
+      "successful_logins": 1,
+      "unique_usernames": [
+        "analyst"
+      ],
+      "first_seen": "2026-11-19 18:31:15",
+      "last_seen": "2026-11-19 18:31:15",
+      "alert_triggered": false
+    }
+  ],
+  "alerts": [
+    {
+      "source_ip": "203.0.113.10",
+      "failed_attempts": 6,
+      "usernames_targeted": [
+        "admin",
+        "deploy",
+        "root",
+        "test"
+      ],
+      "successful_login_after_failures": true,
+      "successful_usernames": [
+        "deploy"
+      ],
+      "first_seen": "2026-11-19 18:00:01",
+      "last_seen": "2026-11-19 18:05:27",
+      "severity": "HIGH",
+      "title": "SSH failures followed by successful authentication",
+      "mitre_attack": "T1110 \u2014 Brute Force",
+      "recommendation": "Treat as a potential account compromise: preserve relevant logs, verify the successful session with the account owner, review subsequent activity and follow the organisation's incident-response process. Revoke sessions or disable credentials only under the approved response procedure."
+    }
+  ]
+}
